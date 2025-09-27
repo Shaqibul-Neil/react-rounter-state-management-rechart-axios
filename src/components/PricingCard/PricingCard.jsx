@@ -15,6 +15,7 @@ const PricingCard = ({ pricing }) => {
           <PricingFeature feature={feature} key={i} />
         ))}
       </div>
+      <button className="btn w-full btn-info">Subscribe</button>
     </div>
   );
 };

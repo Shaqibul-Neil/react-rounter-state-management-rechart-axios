@@ -1,7 +1,6 @@
 import { ShieldCheck } from "lucide-react";
 
 const PricingFeature = ({ feature }) => {
-  console.log(feature);
   return (
     <>
       <p className="flex gap-2">

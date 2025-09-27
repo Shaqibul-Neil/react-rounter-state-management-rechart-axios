@@ -4,6 +4,7 @@
     "name": "Basic Plan",
     "price": "$19/mo",
     "description": "Perfect for beginners who want access to essential gym equipment and facilities at an affordable price.",
+    "badge": null,
     "features": [
       "Unlimited access to gym equipment",
       "Locker room & shower facilities",
@@ -19,6 +20,7 @@
     "name": "Standard Plan",
     "price": "$39/mo",
     "description": "Ideal for fitness enthusiasts who want group classes, better facilities, and a guided approach to health.",
+    "badge": "Most Popular",
     "features": [
       "Everything in Basic Plan",
       "Unlimited group fitness classes",
@@ -36,6 +38,7 @@
     "name": "Premium Plan",
     "price": "$59/mo",
     "description": "Designed for serious athletes and committed members who want personalized training, VIP benefits, and 24/7 access.",
+    "badge": null,
     "features": [
       "Everything in Standard Plan",
       "Unlimited personal training sessions",
