@@ -1,0 +1,49 @@
+[
+  {
+    "id": 1,
+    "name": "Basic Plan",
+    "price": "$19/mo",
+    "features": [
+      "Unlimited access to gym equipment",
+      "Locker room & shower facilities",
+      "Free water refill station",
+      "1 complimentary fitness assessment",
+      "Access during staffed hours",
+      "Basic cardio & strength machines",
+      "Member discounts on supplements"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Standard Plan",
+    "price": "$39/mo",
+    "features": [
+      "Everything in Basic Plan",
+      "Unlimited group fitness classes",
+      "Sauna & steam room access",
+      "2 personal training sessions per month",
+      "Customized nutrition guide",
+      "Yoga & Zumba classes included",
+      "Weekend bootcamp sessions",
+      "Access to gym mobile app with workout tracking",
+      "Free guest pass once a month"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Premium Plan",
+    "price": "$59/mo",
+    "features": [
+      "Everything in Standard Plan",
+      "Unlimited personal training sessions",
+      "VIP lounge & smoothie bar access",
+      "Fully customized diet & workout plan",
+      "Priority booking for all classes",
+      "Access to exclusive workshops & events",
+      "Free physiotherapy consultation once a month",
+      "Complimentary sports massage (1 per month)",
+      "Access to partner gyms nationwide",
+      "24/7 gym access with smart entry"
+    ]
+  }
+]

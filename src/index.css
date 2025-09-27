@@ -7,3 +7,15 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+.mdNav {
+  @apply md:hidden bg-white text-[#1D232A] rounded-md w-48 transition-all duration-500 p-3 absolute left-11;
+}
+.layout {
+  @apply flex justify-between items-center;
+}
+.links {
+  @apply lg:border-b-2 lg:border-b-transparent lg:hover:border-b-white lg:py-2;
+}
+.mdHover {
+  @apply hover:bg-[#1D232A] md:hover:bg-none py-1 px-3 md:py-0 md:px-0 hover:text-white transition-all duration-300 rounded-md md:rounded-none;
+}

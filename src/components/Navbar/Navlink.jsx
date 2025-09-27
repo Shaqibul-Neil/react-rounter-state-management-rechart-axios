@@ -1,7 +1,9 @@
 const Navlink = ({ route }) => {
   return (
-    <li>
-      <a href={route.path}>{route.name}</a>
+    <li className="mdHover">
+      <a href={route.path} className="links">
+        {route.name}
+      </a>
     </li>
   );
 };

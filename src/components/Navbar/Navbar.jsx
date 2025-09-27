@@ -36,21 +36,18 @@ const Navbar = () => {
     <Navlink route={route} key={route.id} />
   ));
   return (
-    <nav className="flex justify-between items-center">
-      <div
-        className="flex items-center gap-4"
-        onClick={() => setMenuOpen(!menuOpen)}
-      >
+    <nav className="layout">
+      <div className="layout gap-4" onClick={() => setMenuOpen(!menuOpen)}>
         {menuOpen ? (
-          <X className="lg:hidden" />
+          <X className="md:hidden" />
         ) : (
-          <Menu className="lg:hidden"></Menu>
+          <Menu className="md:hidden"></Menu>
         )}
-        <ul className="lg:hidden">{links}</ul>
+        <ul className={`mdNav  ${menuOpen ? "top-20" : "-top-50"}`}>{links}</ul>
         <h3>My NavBar</h3>
       </div>
 
-      <ul className="lg:flex gap-4 hidden">{links}</ul>
+      <ul className="md:flex gap-10 hidden">{links}</ul>
       <button className="btn btn-info">Click Me</button>
     </nav>
   );
