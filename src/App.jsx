@@ -18,13 +18,15 @@ function App() {
         <Navbar />
       </header>
       {/* <DaisyNav /> */}
-      <div className="max-w-[1200px] mx-auto my-10 px-10">
+      <main className="max-w-[1200px] mx-auto mt-24 px-10  min-h-[500px]">
         <Suspense
-          fallback=<span className="loading loading-spinner loading-lg"></span>
+          fallback={
+            <span className="loading loading-spinner loading-lg"></span>
+          }
         >
           <PricingOptions fetchPromise={fetchPromise} />
         </Suspense>
-      </div>
+      </main>
     </>
   );
 }
