@@ -1,4 +1,12 @@
-import { Legend, Line, LineChart, Tooltip, XAxis, YAxis } from "recharts";
+import {
+  Legend,
+  Line,
+  LineChart,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis,
+  YAxis,
+} from "recharts";
 
 const resultsData = [
   { id: 1, name: "Rahim", physics: 78, chemistry: 65, math: 82 },
@@ -11,38 +19,42 @@ const resultsData = [
   { id: 8, name: "Mitu", physics: 95, chemistry: 90, math: 98 },
   { id: 9, name: "Rakib", physics: 69, chemistry: 74, math: 72 },
   { id: 10, name: "Anika", physics: 90, chemistry: 86, math: 93 },
-  { id: 11, name: "Sajib", physics: 76, chemistry: 68, math: 81 },
-  { id: 12, name: "Farzana", physics: 83, chemistry: 85, math: 87 },
-  { id: 13, name: "Imran", physics: 72, chemistry: 66, math: 70 },
-  { id: 14, name: "Nadim", physics: 65, chemistry: 60, math: 68 },
-  { id: 15, name: "Joya", physics: 87, chemistry: 82, math: 91 },
 ];
 
 const ResultsCharts = () => {
   return (
-    <div>
-      <LineChart width={1200} height={400} data={resultsData}>
-        <XAxis dataKey={"name"} />
-        <YAxis
-          width={50}
-          label={{
-            value: "marks",
-            position: "outsideLeft",
-            angle: -90,
-            dx: -20,
-          }}
-        />
-        <Line dataKey="physics" strokeWidth={2} name="physics" />
-        <Line dataKey={"math"} stroke="red" strokeWidth={2} name="math" />
-        <Line
-          dataKey={"chemistry"}
-          stroke="green"
-          strokeWidth={2}
-          name="chemistry"
-        />
-        <Legend align="right" />
-        <Tooltip />
-      </LineChart>
+    <div className="md:w-11/12 w-full h-96 mx-auto">
+      <ResponsiveContainer width="100%" height="100%">
+        <LineChart
+          data={resultsData}
+          margin={{ top: 40, right: 20, left: 10, bottom: 20 }}
+        >
+          <XAxis dataKey={"name"} interval={0} angle={-90} textAnchor="end" />
+          <YAxis
+            width={40}
+            label={{
+              value: "marks",
+              position: "outsideLeft",
+              angle: -90,
+              dx: -20,
+            }}
+          />
+          <Line dataKey="physics" strokeWidth={2} name="physics" />
+          <Line dataKey={"math"} stroke="red" strokeWidth={2} name="math" />
+          <Line
+            dataKey={"chemistry"}
+            stroke="green"
+            strokeWidth={2}
+            name="chemistry"
+          />
+          <Legend
+            verticalAlign="bottom"
+            align="center"
+            wrapperStyle={{ bottom: -20, right: 0 }}
+          />
+          <Tooltip />
+        </LineChart>
+      </ResponsiveContainer>
     </div>
   );
 };
