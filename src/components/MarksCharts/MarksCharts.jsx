@@ -53,7 +53,10 @@ const MarksCharts = ({ marksPromise }) => {
               dx: -20,
             }}
           />
-          <Tooltip wrapperStyle={{ backgroundColor: "red" }} />
+          <Tooltip
+            contentStyle={{ color: "aqua", backgroundColor: "black" }}
+            cursor={{ fill: "black" }}
+          />
           <Legend wrapperStyle={{ backgroundColor: "black", bottom: -30 }} />
           <Bar dataKey={"physics"} fill="#8884d8" />
           <Bar dataKey={"chemistry"} fill="#82ca9d" />
